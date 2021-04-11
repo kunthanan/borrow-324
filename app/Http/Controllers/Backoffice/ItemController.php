@@ -16,7 +16,7 @@ class ItemController extends Controller
     public function index()
     {
         //
-        $items = Item::orderBy('id','desc')->paginate(2);
+        $items = Item::orderBy('id','desc')->paginate(15);
         return view('backoffice.item-list',compact('items'));
     }
 
